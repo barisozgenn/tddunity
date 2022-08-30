@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TDDUnity.Abstracts.Controllers;
+using TDDUnity.Abstracts.Inputs;
 using UnityEngine;
 
 namespace TDDUnity.Controllers
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour, IPlayerController
     {
         #region Movement
 
@@ -23,6 +25,8 @@ namespace TDDUnity.Controllers
         #endregion
         #region Animation
         #endregion
+        public IInputReader InputReader { get; set; }
     }
 
 }
+
