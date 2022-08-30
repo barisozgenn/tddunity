@@ -19,12 +19,115 @@ MonoBehaviour:
     width: 1440
     height: 810
   m_ShowMode: 4
-  m_Title: Scene
-  m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_Title: Project
+  m_RootView: {fileID: 9}
+  m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 402.5
+    width: 448
+    height: 357.5
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 2}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 448
+    height: 760
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 30
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 403.5
+    width: 651.5
+    height: 356.5
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 13}
+  - {fileID: 4}
+  m_Position:
+    serializedVersion: 2
+    x: 448
+    y: 0
+    width: 651.5
+    height: 760
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 22
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,8 +140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
-  - {fileID: 3}
+  - {fileID: 12}
+  - {fileID: 7}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -48,8 +151,8 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 16
---- !u!114 &3
+  controlID: 28
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,7 +162,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -68,15 +171,15 @@ MonoBehaviour:
     y: 0
     width: 340.5
     height: 760
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
   m_Panes:
+  - {fileID: 16}
   - {fileID: 14}
-  - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &4
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,43 +196,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 272
-    height: 450
+    width: 448
+    height: 402.5
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 450
-    width: 1099.5
-    height: 310
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
-  m_Panes:
-  - {fileID: 13}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &6
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,9 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 2}
-  - {fileID: 8}
+  - {fileID: 10}
+  - {fileID: 6}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -157,7 +233,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &7
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +255,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &8
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,7 +276,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &9
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
+  - {fileID: 3}
   - {fileID: 5}
   m_Position:
     serializedVersion: 2
@@ -223,34 +299,9 @@ MonoBehaviour:
     height: 760
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 17
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1099.5
-    height: 450
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
---- !u!114 &11
+  controlID: 29
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,19 +316,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 272
+    x: 0
     y: 0
-    width: 827.5
-    height: 450
+    width: 651.5
+    height: 403.5
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &12
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,7 +356,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 800
+    ID: 558
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -329,51 +379,16 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 0}
-    m_NewResultList: []
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories: []
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 12}
+    m_Window: {fileID: 14}
     m_NewResultList:
-    - id: 1000
+    - id: 1021
       uniqueId: '[TDDUnity][suite]'
       name: TDDUnity
       fullName: TDDUnity
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 2.3333797
       messages: 
       output: 
       stacktrace: 
@@ -384,12 +399,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
-      uniqueId: '[EditTests][/Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Library/ScriptAssemblies/EditTests.dll][suite]'
-      name: EditTests.dll
-      fullName: /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Library/ScriptAssemblies/EditTests.dll
-      resultStatus: 0
-      duration: 0
+    - id: 1003
+      uniqueId: '[PlayModeTests.dll][suite]'
+      name: PlayModeTests.dll
+      fullName: /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Library/ScriptAssemblies/PlayModeTests.dll
+      resultStatus: 1
+      duration: 2.038749
       messages: 
       output: 
       stacktrace: 
@@ -400,12 +415,28 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[TDDUnity][suite]'
+    - id: 1004
+      uniqueId: PlayModeTests.dll/[PlayModeTests][PlayModeSumTest][suite]
+      name: PlayModeSumTest
+      fullName: PlayModeSumTest
+      resultStatus: 1
+      duration: 2.0331929
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[PlayModeTests.dll][suite]'
     - id: 1001
-      uniqueId: EditTests.dll/[EditTests][first_edit_test_script][suite]
-      name: first_edit_test_script
-      fullName: first_edit_test_script
-      resultStatus: 0
-      duration: 0
+      uniqueId: PlayModeTests.dll/PlayModeSumTest/[PlayModeTests][PlayModeSumTest.first_play_mode_test_script][suite]
+      name: first_play_mode_test_script
+      fullName: PlayModeSumTest.first_play_mode_test_script
+      resultStatus: 1
+      duration: 2.0308638
       messages: 
       output: 
       stacktrace: 
@@ -415,13 +446,13 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentId: 1004
-      parentUniqueId: '[EditTests][/Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Library/ScriptAssemblies/EditTests.dll][suite]'
-    - id: 1002
-      uniqueId: EditTests.dll/first_edit_test_script/[EditTests][first_edit_test_script.first_edit_test_scriptSimplePasses]
-      name: first_edit_test_scriptSimplePasses
-      fullName: first_edit_test_script.first_edit_test_scriptSimplePasses
-      resultStatus: 0
-      duration: 0
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][PlayModeSumTest][suite]
+    - id: 1004
+      uniqueId: PlayModeTests.dll/PlayModeSumTest/first_play_mode_test_script/[PlayModeTests][PlayModeSumTest.first_play_mode_test_script.find_gameobject_in_scene]
+      name: find_gameobject_in_scene
+      fullName: PlayModeSumTest.first_play_mode_test_script.find_gameobject_in_scene
+      resultStatus: 1
+      duration: 2.0181715
       messages: 
       output: 
       stacktrace: 
@@ -432,13 +463,37 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditTests.dll/[EditTests][first_edit_test_script][suite]
+      parentUniqueId: PlayModeTests.dll/PlayModeSumTest/[PlayModeTests][PlayModeSumTest.first_play_mode_test_script][suite]
     - id: 1003
-      uniqueId: EditTests.dll/first_edit_test_script/[EditTests][first_edit_test_script.first_edit_test_scriptWithEnumeratorPasses]
-      name: first_edit_test_scriptWithEnumeratorPasses
-      fullName: first_edit_test_script.first_edit_test_scriptWithEnumeratorPasses
-      resultStatus: 0
-      duration: 0
+      uniqueId: PlayModeTests.dll/PlayModeSumTest/first_play_mode_test_script/[PlayModeTests][PlayModeSumTest.first_play_mode_test_script.numbers_minus_test_is_equal_10]
+      name: numbers_minus_test_is_equal_10
+      fullName: PlayModeSumTest.first_play_mode_test_script.numbers_minus_test_is_equal_10
+      resultStatus: 2
+      duration: 0.0202155
+      messages: "  Expected: 10\n  But was:  -5\n"
+      output: 
+      stacktrace: 'at PlayModeSumTest.first_play_mode_test_script+<numbers_minus_test_is_equal_10>d__1.MoveNext
+        () [0x0004a] in /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Assets/_GameFolders/Scripts/Tests/PlayModeTests/first_play_mode_test_script.cs:54
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayModeTests.dll/PlayModeSumTest/[PlayModeTests][PlayModeSumTest.first_play_mode_test_script][suite]
+    - id: 1002
+      uniqueId: PlayModeTests.dll/PlayModeSumTest/first_play_mode_test_script/[PlayModeTests][PlayModeSumTest.first_play_mode_test_script.numbers_sum_test_is_equal_15]
+      name: numbers_sum_test_is_equal_15
+      fullName: PlayModeSumTest.first_play_mode_test_script.numbers_sum_test_is_equal_15
+      resultStatus: 1
+      duration: 0.0099337
       messages: 
       output: 
       stacktrace: 
@@ -449,14 +504,14 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
-      parentUniqueId: EditTests.dll/[EditTests][first_edit_test_script][suite]
-    m_ResultText: 
+      parentUniqueId: PlayModeTests.dll/PlayModeSumTest/[PlayModeTests][PlayModeSumTest.first_play_mode_test_script][suite]
+    m_ResultText: find_gameobject_in_scene (2.018s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 99a55ad8
-      m_LastClickedID: -665148007
-      m_ExpandedIDs: 99a55ad8cd3687ed39853f6dffffff7f
+      m_SelectedIDs: c9752d2a
+      m_LastClickedID: 707622345
+      m_ExpandedIDs: ae332b910fd598faf0374d0e39853f6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -482,7 +537,149 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &13
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 14}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[TDDUnity][suite]'
+      name: TDDUnity
+      fullName: TDDUnity
+      resultStatus: 2
+      duration: 0.025237
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1006
+      uniqueId: '[EditTests.dll][suite]'
+      name: EditTests.dll
+      fullName: /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Library/ScriptAssemblies/EditTests.dll
+      resultStatus: 2
+      duration: 0.0133742
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1002
+      parentUniqueId: '[TDDUnity][suite]'
+    - id: 1007
+      uniqueId: EditTests.dll/[EditTests][EditModeSumTest][suite]
+      name: EditModeSumTest
+      fullName: EditModeSumTest
+      resultStatus: 2
+      duration: 0.0118009
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1006
+      parentUniqueId: '[EditTests.dll][suite]'
+    - id: 1003
+      uniqueId: EditTests.dll/EditModeSumTest/[EditTests][EditModeSumTest.first_edit_test_script][suite]
+      name: first_edit_test_script
+      fullName: EditModeSumTest.first_edit_test_script
+      resultStatus: 2
+      duration: 0.0080525
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1007
+      parentUniqueId: EditTests.dll/[EditTests][EditModeSumTest][suite]
+    - id: 1005
+      uniqueId: EditTests.dll/EditModeSumTest/first_edit_test_script/[EditTests][EditModeSumTest.first_edit_test_script.numbers_minus_test_is_equal_10]
+      name: numbers_minus_test_is_equal_10
+      fullName: EditModeSumTest.first_edit_test_script.numbers_minus_test_is_equal_10
+      resultStatus: 2
+      duration: 0.0041243
+      messages: "  Expected: 10\n  But was:  -5\n"
+      output: 
+      stacktrace: 'at EditModeSumTest.first_edit_test_script.numbers_minus_test_is_equal_10
+        () [0x0000d] in /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Assets/_GameFolders/Scripts/Tests/EditTests/first_edit_test_script.cs:53
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditTests.dll/EditModeSumTest/[EditTests][EditModeSumTest.first_edit_test_script][suite]
+    - id: 1004
+      uniqueId: EditTests.dll/EditModeSumTest/first_edit_test_script/[EditTests][EditModeSumTest.first_edit_test_script.numbers_sum_test_is_equal_15]
+      name: numbers_sum_test_is_equal_15
+      fullName: EditModeSumTest.first_edit_test_script.numbers_sum_test_is_equal_15
+      resultStatus: 1
+      duration: 0.0106531
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditTests.dll/EditModeSumTest/[EditTests][EditModeSumTest.first_edit_test_script][suite]
+    m_ResultText: "numbers_minus_test_is_equal_10 (0.004s)\n---\nExpected: 10\n 
+      But was:  -5\n---\nat EditModeSumTest.first_edit_test_script.numbers_minus_test_is_equal_10
+      () [0x0000d] in /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Assets/_GameFolders/Scripts/Tests/EditTests/first_edit_test_script.cs:53"
+    m_ResultStacktrace: 'at EditModeSumTest.first_edit_test_script.numbers_minus_test_is_equal_10
+      () [0x0000d] in /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity/Assets/_GameFolders/Scripts/Tests/EditTests/first_edit_test_script.cs:53
+
+'
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: e794ddc9
+      m_LastClickedID: -908225305
+      m_ExpandedIDs: 9efd4ad399a55ad8cd3687ed9ffab0eeb957b16639853f6dffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -503,9 +700,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 533
-    width: 1098.5
-    height: 289
+    y: 485.5
+    width: 447
+    height: 336.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -523,38 +720,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_GameFolders/Scripts/Tests/EditTests
+    - Assets/_AssetsFolders/NSubstite
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders:
-  - Assets/_GameFolders/Scripts/Tests/EditTests
-  m_LastFoldersGridSize: -1
+  - Assets/_AssetsFolders/NSubstite
+  m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/barisozgen/Documents/Projeler/barboda-PreProjeler/tddunityrepo/TDDUnity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 19}
-    m_SelectedIDs: 16640000
-    m_LastClickedID: 25622
-    m_ExpandedIDs: 00000000be630000c0630000e4630000026400001064000000ca9a3b
+    scrollPos: {x: 0, y: 55.5}
+    m_SelectedIDs: 52960000
+    m_LastClickedID: 38482
+    m_ExpandedIDs: 00000000ba630000bc630000e6630000e8630000ee630000f0630000fc630000126500005296000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: _AssetsFolders
+      m_OriginalName: _AssetsFolders
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 25574
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 2}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -566,7 +763,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be630000c0630000
+    m_ExpandedIDs: 00000000ba630000bc630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,8 +790,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c62300001865000014650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -610,7 +807,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 3}
+      m_ClientGUIView: {fileID: 2}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -619,10 +816,10 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &14
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -663,7 +860,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &15
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -685,8 +882,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 83
-    width: 271
-    height: 429
+    width: 447
+    height: 381.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -694,9 +891,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 56960000
       m_LastClickedID: 0
-      m_ExpandedIDs: 08fbffff
+      m_ExpandedIDs: 6ec9ffffeac9ffff24d0ffff5cd0ffff9ed0ffff04d2ffff06d7ffff48d7ffffb4d8ffff42e0ffff98e0ffff8ae8ffffe0e8ffffcceaffff8cedfffffceeffff08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -720,7 +917,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -740,10 +937,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 272
+    x: 448
     y: 83
-    width: 825.5
-    height: 429
+    width: 649.5
+    height: 382.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1047,7 +1244,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &17
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1067,10 +1264,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
+    x: 448
+    y: 486.5
+    width: 649.5
+    height: 335.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1081,10 +1278,10 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1532, y: 769}
+  m_TargetSize: {x: 649.5, y: 314.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
+  m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
@@ -1096,10 +1293,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -383
-    m_HBaseRangeMax: 383
-    m_VBaseRangeMin: -192.25
-    m_VBaseRangeMax: 192.25
+    m_HBaseRangeMin: -162.375
+    m_HBaseRangeMax: 162.375
+    m_VBaseRangeMin: -78.625
+    m_VBaseRangeMax: 78.625
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1117,29 +1314,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1532
-      height: 769
+      width: 649.5
+      height: 314.5
     m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 766, y: 384.5}
+    m_Translation: {x: 324.75, y: 157.25}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -383
-      y: -192.25
-      width: 766
-      height: 384.5
+      x: -162.375
+      y: -78.625
+      width: 324.75
+      height: 157.25
     m_MinimalGUI: 1
   m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 3064, y: 1580}
+  m_LastWindowPixelSize: {x: 1299, y: 671}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1159,10 +1356,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2249
-    y: 726.5
-    width: 920
-    height: 250
+    x: 0
+    y: 485.5
+    width: 447
+    height: 336.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
