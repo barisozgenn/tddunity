@@ -28,7 +28,7 @@ namespace TDDUnity.Movements
 
         public void Tick()
         {
-            _transform.Translate(Vector2.right * _horizontalInput);
+            _transform.Translate(Vector2.right * (_horizontalInput*Time.deltaTime));
         }
     }
 
