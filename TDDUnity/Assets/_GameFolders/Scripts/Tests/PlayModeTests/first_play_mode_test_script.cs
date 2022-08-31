@@ -40,7 +40,7 @@ namespace PlayModeSumTest //We define a namespace to manage it easily in hierarc
 
             int number1 = 5;
             int number2 = 10;
-            int sumExpectedResult = 10;
+            int sumExpectedResult = -5;
 
             #endregion
             #region Act: Use references we defined in Arrange

@@ -6,6 +6,7 @@ using NSubstitute;
 using TDDUnity.Movements;
 using UnityEngine;
 using TDDUnity.Abstracts.Inputs;
+using TDDUnity.Abstracts.ScriptableObjects;
 
 namespace Movements
 {
@@ -19,6 +20,8 @@ namespace Movements
 
             playerController.transform.Returns(gObjExample.transform);
             playerController.InputReader = Substitute.For<IInputReader>();
+            playerController.Stats.Returns(Substitute.For<IPlayerStats>());
+            playerController.Stats.MoveSpeed.Returns(5f);
 
             return playerController;
         }

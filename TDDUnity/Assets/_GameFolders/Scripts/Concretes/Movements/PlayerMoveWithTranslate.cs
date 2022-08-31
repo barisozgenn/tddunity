@@ -11,8 +11,7 @@ namespace TDDUnity.Movements
         readonly IPlayerController _playerController;
         readonly Transform _transform;
 
-        float _moveSpeed = 1f;
-        float _horizontalInput = 0;
+         float _horizontalInput = 0;
 
 
         public PlayerMoveWithTranslate(IPlayerController playerController)
@@ -23,12 +22,12 @@ namespace TDDUnity.Movements
         public void FixedTick()
         {
 
-            _horizontalInput = _playerController.InputReader.Horizontal;
+           _horizontalInput = _playerController.InputReader.Horizontal;
         }
 
         public void Tick()
         {
-            _transform.Translate(Vector2.right * (_horizontalInput*Time.deltaTime));
+            _transform.Translate(Vector2.right * _horizontalInput* (_playerController.Stats.MoveSpeed  *Time.deltaTime));
         }
     }
 
