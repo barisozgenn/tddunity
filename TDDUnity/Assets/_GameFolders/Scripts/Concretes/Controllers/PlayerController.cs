@@ -18,6 +18,7 @@ namespace TDDUnity.Controllers
         #region Movement
         IMover _mover;
         #region Flip
+        IFlip _flip;
         #endregion
         #region Jumps
         #endregion
@@ -40,12 +41,14 @@ namespace TDDUnity.Controllers
         {
             InputReader = new InputReader();
 
-            _mover = new PlayerMoveWithTranslate(this);
+            _mover = new PlayerMoveWithTranslate(playerController: this);
+            _flip = new PlayerFlipWithScale(playerController: this);
         }
 
         void Update()
         {
             _mover.Tick();
+            _flip.Tick();
         }
 
         void FixedUpdate()
