@@ -46,7 +46,7 @@ namespace TDDUnity.Controllers
 
             _mover = new PlayerMoveWithTranslate(playerController: this);
             _flip = new PlayerFlipWithScale(playerController: this);
-            Health = new Health(maxHealth: _playerStats.MaxHealth);
+            Health = new Health(stats: Stats);
         }
 
         void Update()
@@ -60,9 +60,6 @@ namespace TDDUnity.Controllers
             _mover.FixedTick();
         }
 
-        void OnCollisionEnter2D (Collision2D collisionOther){
-            Debug.Log(nameof(OnCollisionEnter2D));
-        }
     }
 }
 

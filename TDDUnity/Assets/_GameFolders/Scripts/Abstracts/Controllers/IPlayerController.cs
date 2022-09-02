@@ -1,4 +1,5 @@
-﻿using TDDUnity.Abstracts.Inputs;
+﻿using TDDUnity.Abstracts.Combats;
+using TDDUnity.Abstracts.Inputs;
 using TDDUnity.Abstracts.ScriptableObjects;
 
 namespace TDDUnity.Abstracts.Controllers
@@ -7,5 +8,6 @@ namespace TDDUnity.Abstracts.Controllers
     {
         IInputReader InputReader { get; set; }
         IPlayerStats Stats { get; }
+        IHealth Health { get; }
     }
 }

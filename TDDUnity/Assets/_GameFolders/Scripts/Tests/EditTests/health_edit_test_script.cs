@@ -3,6 +3,7 @@ using UnityEngine;
 using NSubstitute;
 using TDDUnity.Abstracts.Combats;
 using TDDUnity.Combats;
+using TDDUnity.Abstracts.ScriptableObjects;
 
 namespace Combats
 {
@@ -18,7 +19,10 @@ namespace Combats
 
         private IHealth GetHealth(int maxHealth)
         {
-            return new Health(maxHealth: maxHealth);
+            IStats stats = Substitute.For<IStats>();
+            stats.MaxHealth.Returns(maxHealth);
+
+            return new Health(stats: stats);
         }
 
         [Test]

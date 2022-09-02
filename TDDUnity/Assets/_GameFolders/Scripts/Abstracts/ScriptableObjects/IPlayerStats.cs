@@ -1,10 +1,9 @@
 
 namespace TDDUnity.Abstracts.ScriptableObjects
 {
-    public interface IPlayerStats
+    public interface IPlayerStats :IStats
     {
-      float MoveSpeed { get;}
-        int MaxHealth { get; }
+        float JumpForce { get; }
     }
 }
 

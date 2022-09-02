@@ -12,8 +12,8 @@ namespace Combats
 {
     public class player_health_play_mode_test_script
     {
-        //IPlayerController _playerController;
-        //IEnemyController _enemyController;
+        IPlayerController _player;
+        IEnemyController _enemy;
 
         private IEnumerator LoadSceneTestScene()
         {
@@ -25,27 +25,25 @@ namespace Combats
         {
             yield return LoadSceneTestScene();
 
-            //_playerController = GameObject.FindObjectOfType<PlayerController>();
-            //_enemyController = GameObject.FindObjectOfType<EnemyController>();
+            _player = GameObject.FindObjectOfType<PlayerController>();
+            _enemy = GameObject.FindObjectOfType<EnemyController>();
            
         }
 
         [UnityTest]
-        public IEnumerator player_take_damage()
+        public IEnumerator player_take_damage_in_single_time()
         {
 
             #region Arrange: Get Reference what we will use
-            var player = GameObject.FindObjectOfType<PlayerController>();
-            var enemy = GameObject.FindObjectOfType<EnemyController>();
 
-            int startHealth = player.Health.CurrentHealth;
+            int startHealth = _player.Health.CurrentHealth;
 
             #endregion
             #region Act: Use references we defined in Arrange
 
             yield return new WaitForSeconds(3f);
 
-            enemy.transform.position = player.transform.position;
+            _enemy.transform.position = _player.transform.position;
 
             yield return new WaitForSeconds(3f);
             #endregion
@@ -53,11 +51,40 @@ namespace Combats
             #region Assert: Get Result
 
 
-            Assert.AreEqual(expected: startHealth-1, actual: player.Health.CurrentHealth);
+            Assert.AreEqual(expected: startHealth-1, actual: _player.Health.CurrentHealth);
 
             yield return null;
             #endregion
           
+        }
+        [UnityTest]
+        [TestCase(2, ExpectedResult = (IEnumerator)null)]
+        [TestCase(10, ExpectedResult = (IEnumerator)null)]
+        public IEnumerator player_take_some_damage_in_single_time(int damageValue)
+        {
+
+            #region Arrange: Get Reference what we will use
+
+            int startHealth = _player.Health.CurrentHealth;
+
+            #endregion
+            #region Act: Use references we defined in Arrange
+
+            yield return new WaitForSeconds(3f);
+
+            _enemy.transform.position = _player.transform.position;
+
+            yield return new WaitForSeconds(3f);
+            #endregion
+
+            #region Assert: Get Result
+
+
+            Assert.AreEqual(expected: startHealth - damageValue, actual: _player.Health.CurrentHealth);
+
+            yield return null;
+            #endregion
+
         }
     }
 
