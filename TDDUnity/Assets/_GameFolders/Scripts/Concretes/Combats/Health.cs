@@ -13,7 +13,7 @@ namespace TDDUnity.Combats
         public event Action OnTakeDamage;
         public event Action OnDead;
 
-        public int CurrentHealt => _currentHealth;
+        public int CurrentHealth => _currentHealth;
 
         public Health(int maxHealth)
         {

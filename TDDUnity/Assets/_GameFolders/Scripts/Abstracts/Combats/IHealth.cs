@@ -4,7 +4,7 @@ namespace TDDUnity.Abstracts.Combats
 {
     public interface IHealth
     {
-        int CurrentHealt { get;}
+        int CurrentHealth { get;}
 
         void TakeDamage(TDDUnity.Abstracts.Combats.IAttacker attacker);
         event Action OnTakeDamage;

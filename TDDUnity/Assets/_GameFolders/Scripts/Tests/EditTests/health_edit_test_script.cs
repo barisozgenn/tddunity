@@ -42,7 +42,7 @@ namespace Combats
 
             #region Assert: Get Result
 
-            Assert.AreNotEqual(expected: maxHealth, actual: health.CurrentHealt);
+            Assert.AreNotEqual(expected: maxHealth, actual: health.CurrentHealth);
 
             #endregion
         }
@@ -66,7 +66,7 @@ namespace Combats
 
             #region Assert: Get Result
 
-            Assert.GreaterOrEqual(arg1: 0, arg2:health.CurrentHealt);
+            Assert.GreaterOrEqual(arg1: 0, arg2:health.CurrentHealth);
 
             #endregion
         }
@@ -115,10 +115,10 @@ namespace Combats
             health.OnTakeDamage += () => damageValue++;
 
 
-            while (health.CurrentHealt > 0)
+            while (health.CurrentHealth > 0)
             {
                 health.TakeDamage(attacker: _attacker);
-                Debug.Log("health => " + health.CurrentHealt);
+                Debug.Log("health => " + health.CurrentHealth);
 
             }
 
@@ -126,7 +126,7 @@ namespace Combats
 
             #region Assert: Get Result
 
-            Assert.GreaterOrEqual(arg1: 0, arg2: health.CurrentHealt);
+            Assert.GreaterOrEqual(arg1: 0, arg2: health.CurrentHealth);
 
             #endregion
         }
