@@ -56,4 +56,4 @@ Contributions to the TDDUnity project are welcome! If you'd like to contribute, 
 5. Submit a pull request, clearly outlining the changes you've made and their purpose.
 6. Let's contribute together.
 
-For any inquiries or questions or more, please check out to my [YouTube channel](https://www.youtube.com/your-channel-name) for related content.
+For any inquiries or questions or more, please check out to my [YouTube channel](https://www.youtube.com/@barisozgen) for related content.
