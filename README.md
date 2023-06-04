@@ -10,10 +10,13 @@ The TDDUnity project aims to showcase the implementation of TDD principles in Un
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Contributing](#contributing)
+- [TDDUnity](#tddunity)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
+  - [Contributing](#contributing)
 
 ## Installation
 
@@ -51,6 +54,6 @@ Contributions to the TDDUnity project are welcome! If you'd like to contribute, 
 3. Commit your changes with descriptive messages.
 4. Push your branch to your forked repository.
 5. Submit a pull request, clearly outlining the changes you've made and their purpose.
-
+6. Let's contribute together.
 
 For any inquiries or questions or more, please check out to my [YouTube channel](https://www.youtube.com/your-channel-name) for related content.
